@@ -7,6 +7,7 @@ int main()
 	CVecteur3d vect1;
 	CVecteur3d vect2(5, 10, 15);
 	AfficheCoincide(vect1.coincideVal(vect2));
+	
 
 
 	//tests

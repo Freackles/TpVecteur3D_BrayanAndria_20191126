@@ -1,5 +1,6 @@
 #include <iostream>
 #include "affichages.h"
+#include "CVecteur3d.h"
 
 
 void AfficheCoincide(bool bTest)

@@ -1,5 +1,6 @@
 #include "CVecteur3d.h"
 #include <iostream>
+#include <cmath>
 
 
 float CVecteur3d::getX()
@@ -90,4 +91,41 @@ bool CVecteur3d::coincideRef(CVecteur3d &Vect)
 
 CVecteur3d::~CVecteur3d()
 {
+}
+
+float CVecteur3d::norme()
+{
+	return sqrt(powf(this->fltX, 2.0f) + powf(this->fltY, 2.0f) + powf(this->fltZ, 2.0f));
+}
+
+CVecteur3d CVecteur3d::normaxVal(CVecteur3d vect, CVecteur3d vect2)
+{
+	if (vect2.norme() > vect.norme())
+	{
+		return vect2;
+	}
+	else
+	{
+		return vect;
+	}
+}
+
+CVecteur3d CVecteur3d::normaxAdr(CVecteur3d* vect, CVecteur3d* vect2)
+{
+	if (vect2->norme() > vect->norme())
+		return *vect2;
+	else
+	{
+		return *vect;
+	}
+}
+
+CVecteur3d CVecteur3d::normaxRef(CVecteur3d& vect1, CVecteur3d& vect2)
+{
+	if (vect2.norme() > vect1.norme())
+		return vect2;
+	else
+	{
+		return vect1;
+	}
 }

@@ -53,6 +53,18 @@ public:
 	~CVecteur3d();
 
 
+	//exercice 71
 
+	//norme
+	float norme();
+
+	//normax valeur
+	CVecteur3d normaxVal(CVecteur3d vect, CVecteur3d vect2);
+
+	//normax Adresse
+	CVecteur3d normaxAdr(CVecteur3d *vect, CVecteur3d *vect2);
+
+	//normax Reference
+	CVecteur3d normaxRef(CVecteur3d& vect1, CVecteur3d& vect2);
 };
 
