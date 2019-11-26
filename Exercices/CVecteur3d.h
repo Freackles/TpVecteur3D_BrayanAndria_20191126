@@ -5,6 +5,7 @@ class CVecteur3d
 	//membres
 private:
 	float fltX, fltY, fltZ;
+	static int nCount;
 
 
 	//prototype des methodes
@@ -28,6 +29,7 @@ public:
 		this->fltX = fltX;
 		this->fltY = fltY;
 		this->fltZ = fltZ;
+		nCount++;
 	}
 	
 	//overcharge d'un constructeur
@@ -67,6 +69,8 @@ public:
 	//normax Reference
 	CVecteur3d normaxRef(CVecteur3d& vect1, CVecteur3d& vect2);
 
+
+
 	//exercice 72
 
 	//fonction d'affichage
@@ -77,5 +81,8 @@ public:
 
 	//produit scalaire de 2 vecteurs
 	CVecteur3d prodScalaire(CVecteur3d vect);
+
+	//exercice 73
+	static int Count();
 };
 

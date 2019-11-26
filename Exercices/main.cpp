@@ -24,6 +24,7 @@ int main()
 	AfficheSomeScal(vect1, vect2, 1);
 	/*vect1.affichage();*/
 	
+	AffichageInstances(CVecteur3d::Count());
 
 	return 0;
 }

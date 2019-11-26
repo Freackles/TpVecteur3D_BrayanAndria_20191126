@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cmath>
 
+int CVecteur3d::nCount = 0;
 
 float CVecteur3d::getX()
 {
@@ -39,6 +40,7 @@ CVecteur3d::CVecteur3d()
 	this->fltX = NULL;
 	this->fltY = NULL;
 	this->fltZ = NULL;
+	nCount++;
 }
 
 void CVecteur3d::initialisation(float fltX, float fltY, float fltZ)
@@ -46,6 +48,7 @@ void CVecteur3d::initialisation(float fltX, float fltY, float fltZ)
 	this->fltX = fltX;
 	this->fltY = fltY;
 	this->fltZ = fltZ;
+	nCount++;
 }
 
 void CVecteur3d::affichage()
@@ -91,6 +94,7 @@ bool CVecteur3d::coincideRef(CVecteur3d &Vect)
 
 CVecteur3d::~CVecteur3d()
 {
+	nCount--;
 }
 
 float CVecteur3d::norme()
@@ -139,3 +143,9 @@ CVecteur3d CVecteur3d::prodScalaire(CVecteur3d vect)
 {
 	return CVecteur3d(this->fltX * vect.fltX, this->fltY * vect.fltY, this->fltZ * vect.fltZ);
 }
+
+int CVecteur3d::Count()
+{
+	return nCount;
+}
+

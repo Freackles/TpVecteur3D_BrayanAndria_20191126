@@ -20,7 +20,7 @@ void AfficheSomeScal(CVecteur3d vect, CVecteur3d vect2, int test)
 	CVecteur3d vectTemp;
 
 	//si on souhaite obtenir la somme
-	if (test = 0)
+	if (test == 0)
 	{
 		vectTemp = vect.sommeVect(vect2);
 		std::cout << "La somme de ces 2 vecteurs est" << std::endl;
@@ -34,4 +34,9 @@ void AfficheSomeScal(CVecteur3d vect, CVecteur3d vect2, int test)
 		std::cout << "Le produit scalaire de ces 2 vecteurs est" << std::endl;
 		vectTemp.affichage();
 	}
+}
+
+void AffichageInstances(int nInstance)
+{
+	std::cout << "Il y a " << nInstance << " Vecteurs cans ce programe" << std::endl;
 }
