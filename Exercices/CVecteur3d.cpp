@@ -129,3 +129,13 @@ CVecteur3d CVecteur3d::normaxRef(CVecteur3d& vect1, CVecteur3d& vect2)
 		return vect1;
 	}
 }
+
+CVecteur3d CVecteur3d::sommeVect(CVecteur3d vect)
+{
+	return CVecteur3d(this->fltX+vect.fltX, this->fltY+vect.fltY, this->fltZ+vect.fltZ);
+}
+
+CVecteur3d CVecteur3d::prodScalaire(CVecteur3d vect)
+{
+	return CVecteur3d(this->fltX * vect.fltX, this->fltY * vect.fltY, this->fltZ * vect.fltZ);
+}

@@ -66,5 +66,16 @@ public:
 
 	//normax Reference
 	CVecteur3d normaxRef(CVecteur3d& vect1, CVecteur3d& vect2);
+
+	//exercice 72
+
+	//fonction d'affichage
+	void AfficheSomeScal(CVecteur3d vect, CVecteur3d vect2, int test);
+
+	//somme de 2 vecteurs
+	CVecteur3d sommeVect(CVecteur3d vect);
+
+	//produit scalaire de 2 vecteurs
+	CVecteur3d prodScalaire(CVecteur3d vect);
 };
 
