@@ -20,7 +20,7 @@ public:
 	void setZ(float fltZ);
 
 
-
+	//Exercice 69
 
 	//constructeurs inline
 	inline CVecteur3d(float fltX, float fltY, float fltZ)//;
@@ -37,5 +37,22 @@ public:
 	void initialisation(float fltX, float fltY, float fltZ);
 
 	void affichage();
+
+	//exercice 70
+	
+	//coincide par valeur
+	bool coincideVal(CVecteur3d Vect);
+
+	//Coincide par adresse
+	bool coincideAdr(CVecteur3d* Vect);
+
+	//Coincide par referrence
+	bool coincideRef(CVecteur3d &Vect);
+
+	//destructeur
+	~CVecteur3d();
+
+
+
 };
 

@@ -53,3 +53,41 @@ void CVecteur3d::affichage()
 	std::cout << "X: " << this->getY() << std::endl;
 	std::cout << "X: " << this->getZ() << std::endl;
 }
+
+bool CVecteur3d::coincideVal(CVecteur3d Vect) {
+	if ((this->fltX == Vect.fltX) && (this->fltY == Vect.fltY) && (this->fltZ == Vect.fltZ))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+bool CVecteur3d::coincideAdr(CVecteur3d * Vect) {
+	if ((this->fltX == Vect->fltX) && (this->fltY == Vect->fltY) && (this->fltZ == Vect->fltZ))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+bool CVecteur3d::coincideRef(CVecteur3d &Vect)
+{
+	if ((this->fltX == Vect.fltX) && (this->fltY == Vect.fltY) && (this->fltZ == Vect.fltZ))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+CVecteur3d::~CVecteur3d()
+{
+}
